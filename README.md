@@ -2,6 +2,6 @@
 
 # [Codewars](https://www.codewars.com/) Java Solutions
 
-## 👇 [8 kyu](\8kyu)
+## 👇 [8 kyu](8kyu/)
 
-- [Multiply](\8kyu\multiply\README.md)
+- [Multiply](8kyu/multiply/)
