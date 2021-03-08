@@ -8,6 +8,7 @@
 | :---: | :------------------------------------------ | :---: | :----: | :---: |
 |   6   | [Multiples of 3 or 5](#multiples-of-3-or-5) |   ⭐   |        |       |
 |   8   | [Multiply](#multiply)                       |   ⭐   |        |       |
+|   7   | [Vowel Count](#vowel-count)                 |   ⭐   |        |       |
 
 ---
 
@@ -21,8 +22,9 @@ Note: If the number is a multiple of both 3 and 5, only count it once. Also, if 
 public class Solution {
 
   public int solution(int number) {
-    // Your solution here
+    // Your solution
   }
+  
 }
 ```
 
@@ -30,6 +32,7 @@ public class Solution {
 
 ```java
 public class Solution {
+
   public int solution(int number) {
     int sum = 0;
     for (int i = 3; i < number; i++) {
@@ -39,6 +42,7 @@ public class Solution {
     }
     return sum;
   }
+
 }
 ```
 
@@ -54,9 +58,11 @@ This code does not execute properly. Try to figure out why.
 
 ```java
 public class Multiply {
+
     public static Double multiply(Double a, Double b) {
         return a * b
     }
+
 }
 ```
 
@@ -64,9 +70,50 @@ public class Multiply {
 
 ```java
 public class Multiply {
+
     public static Double multiply(Double a, Double b) {
         return a * b;
     }
+
+}
+```
+
+</details>
+
+---
+
+**[⬆ Back to Top](#challenges)**
+
+## Vowel Count
+
+Return the number (count) of vowels (a, e, i, o, u) in the given string. The input string will only consist of lower case letters and/or spaces.
+
+```java
+public class Vowels {
+
+  public static int getCount(String str) {
+    // Your solution
+  }
+
+}
+```
+
+<details><summary>Solution</summary>
+
+```java
+public class Vowels {
+
+  public static int getCount(String str) {
+    int vowelsCount = 0;
+    String vowels = "aeiou";
+    for (int i = 0; i < str.length(); i++) {
+      if (vowels.contains(String.valueOf(str.charAt(i)))) {
+        vowelsCount++;
+      }
+    }
+    return vowelsCount;
+  }
+
 }
 ```
 
