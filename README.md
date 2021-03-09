@@ -4,13 +4,46 @@
 
 ## Challenges
 
-|  Kyu  | Questions                                   | Easy  | Medium | Hard  |
-| :---: | :------------------------------------------ | :---: | :----: | :---: |
-|   6   | [Multiples of 3 or 5](#multiples-of-3-or-5) |   ⭐   |        |       |
-|   8   | [Multiply](#multiply)                       |   ⭐   |        |       |
-|   7   | [Vowel Count](#vowel-count)                 |   ⭐   |        |       |
+|  Kyu  | Questions                                   |
+| :---: | :------------------------------------------ |
+|   8   | [Even or Odd](#even-or-odd)                 |
+|   6   | [Multiples of 3 or 5](#multiples-of-3-or-5) |
+|   8   | [Multiply](#multiply)                       |
+|   7   | [Vowel Count](#vowel-count)                 |
 
 ---
+
+## Even or Odd
+
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+```java
+public class EvenOrOdd {
+
+  public static String even_or_odd(int number) {
+    // Your solution
+  }
+
+}
+```
+
+<details><summary>Solution</summary>
+
+```java
+public class EvenOrOdd {
+
+  public static String even_or_odd(int number) {
+    return number % 2 == 0 ? "Even" : "Odd";
+  }
+
+}
+```
+
+</details>
+
+---
+
+**[⬆ Back to Top](#challenges)**
 
 ## Multiples of 3 or 5
 
@@ -59,9 +92,9 @@ This code does not execute properly. Try to figure out why.
 ```java
 public class Multiply {
 
-    public static Double multiply(Double a, Double b) {
-        return a * b
-    }
+  public static Double multiply(Double a, Double b) {
+    return a * b
+  }
 
 }
 ```
@@ -71,9 +104,9 @@ public class Multiply {
 ```java
 public class Multiply {
 
-    public static Double multiply(Double a, Double b) {
-        return a * b;
-    }
+  public static Double multiply(Double a, Double b) {
+    return a * b;
+  }
 
 }
 ```
