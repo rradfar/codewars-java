@@ -7,6 +7,7 @@
 |  Kyu  | Questions                                   |
 | :---: | :------------------------------------------ |
 |   8   | [Even or Odd](#even-or-odd)                 |
+|   8   | [Keep Hydrated!](#keep-hydrated)                 |
 |   6   | [Multiples of 3 or 5](#multiples-of-3-or-5) |
 |   8   | [Multiply](#multiply)                       |
 |   7   | [Vowel Count](#vowel-count)                 |
@@ -34,6 +35,38 @@ public class EvenOrOdd {
 
   public static String even_or_odd(int number) {
     return number % 2 == 0 ? "Even" : "Odd";
+  }
+
+}
+```
+
+</details>
+
+---
+
+**[⬆ Back to Top](#challenges)**
+
+## Keep Hydrated!
+
+Nathan loves cycling. Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling. You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+```java
+public class KeepHydrated {
+
+  public int Liters(double time) {
+    // Your solution
+  }
+
+}
+```
+
+<details><summary>Solution</summary>
+
+```java
+public class KeepHydrated {
+
+  public int Liters(double time) {
+    return (int)(time / 2);
   }
 
 }
