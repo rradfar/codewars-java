@@ -6,6 +6,7 @@
 
 |  Kyu  | Questions                                   |
 | :---: | :------------------------------------------ |
+|   8   | [Century From Year](#century-from-year)               |
 |   8   | [Even or Odd](#even-or-odd)                 |
 |   8   | [Keep Hydrated!](#keep-hydrated)                 |
 |   6   | [Multiples of 3 or 5](#multiples-of-3-or-5) |
@@ -14,17 +15,43 @@
 
 ---
 
+## Century From Year
+
+The first century spans from the year 1 up to and including the year 100, The second - from the year 101 up to and including the year 200, etc. Given a year, return the century it is in.
+
+```java
+public class Solution {
+  public static int century(int number) {
+    // Your solution
+  }
+}
+```
+
+<details><summary>Solution</summary>
+
+```java
+public class Solution {
+  public static int century(int number) {
+    return (int)(Math.ceil(number / 100.0)); 
+  }
+}
+```
+
+</details>
+
+---
+
+**[⬆ Back to Top](#challenges)**
+
 ## Even or Odd
 
 Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 
 ```java
 public class EvenOrOdd {
-
   public static String even_or_odd(int number) {
     // Your solution
   }
-
 }
 ```
 
@@ -32,11 +59,9 @@ public class EvenOrOdd {
 
 ```java
 public class EvenOrOdd {
-
   public static String even_or_odd(int number) {
     return number % 2 == 0 ? "Even" : "Odd";
   }
-
 }
 ```
 
@@ -52,11 +77,9 @@ Nathan loves cycling. Because Nathan knows it is important to stay hydrated, he 
 
 ```java
 public class KeepHydrated {
-
   public int Liters(double time) {
     // Your solution
   }
-
 }
 ```
 
@@ -64,11 +87,9 @@ public class KeepHydrated {
 
 ```java
 public class KeepHydrated {
-
   public int Liters(double time) {
     return (int)(time / 2);
   }
-
 }
 ```
 
@@ -86,11 +107,9 @@ Note: If the number is a multiple of both 3 and 5, only count it once. Also, if 
 
 ```java
 public class Solution {
-
   public int solution(int number) {
     // Your solution
   }
-  
 }
 ```
 
@@ -98,7 +117,6 @@ public class Solution {
 
 ```java
 public class Solution {
-
   public int solution(int number) {
     int sum = 0;
     for (int i = 3; i < number; i++) {
@@ -108,7 +126,6 @@ public class Solution {
     }
     return sum;
   }
-
 }
 ```
 
@@ -124,11 +141,9 @@ This code does not execute properly. Try to figure out why.
 
 ```java
 public class Multiply {
-
   public static Double multiply(Double a, Double b) {
     return a * b
   }
-
 }
 ```
 
@@ -136,11 +151,9 @@ public class Multiply {
 
 ```java
 public class Multiply {
-
   public static Double multiply(Double a, Double b) {
     return a * b;
   }
-
 }
 ```
 
@@ -156,11 +169,9 @@ Return the number (count) of vowels (a, e, i, o, u) in the given string. The inp
 
 ```java
 public class Vowels {
-
   public static int getCount(String str) {
     // Your solution
   }
-
 }
 ```
 
@@ -168,7 +179,6 @@ public class Vowels {
 
 ```java
 public class Vowels {
-
   public static int getCount(String str) {
     int vowelsCount = 0;
     String vowels = "aeiou";
@@ -179,7 +189,6 @@ public class Vowels {
     }
     return vowelsCount;
   }
-
 }
 ```
 
