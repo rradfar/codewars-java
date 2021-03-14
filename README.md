@@ -9,6 +9,7 @@
 |   8   | [Century From Year](#century-from-year)               |
 |   8   | [Even or Odd](#even-or-odd)                 |
 |   6   | [Find the Odd Int](#find-the-odd-int)                 |
+|   8   | [Is n Divisible by x and y?](#is-n-divisible-by-x-and-y)               |
 |   8   | [Keep Hydrated!](#keep-hydrated)                 |
 |   6   | [Multiples of 3 or 5](#multiples-of-3-or-5) |
 |   8   | [Multiply](#multiply)                       |
@@ -92,6 +93,34 @@ import static java.util.Arrays.stream;
 public class FindOdd {
   public static int findIt(int[] arr) {
     return stream(arr).reduce(0, (a, b) -> a ^ b);
+  }
+}
+```
+
+</details>
+
+---
+
+**[⬆ Back to Top](#challenges)**
+
+## Is n Divisible by x and y?
+
+Create a function that checks if a number `n` is divisible by two numbers `x` AND `y`. All inputs are positive, non-zero digits.
+
+```java
+public class DivisibleNb {
+  public static boolean isDivisible(long n, long x, long y) {
+    // Your solution
+  }
+}
+```
+
+<details><summary>Solution</summary>
+
+```java
+public class DivisibleNb {
+  public static boolean isDivisible(long n, long x, long y) {
+    return (n % x == 0) && (n % y == 0);
   }
 }
 ```
