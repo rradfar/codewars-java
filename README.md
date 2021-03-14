@@ -8,6 +8,7 @@
 | :---: | :------------------------------------------ |
 |   8   | [Century From Year](#century-from-year)               |
 |   8   | [Even or Odd](#even-or-odd)                 |
+|   6   | [Find the Odd Int](#find-the-odd-int)                 |
 |   8   | [Keep Hydrated!](#keep-hydrated)                 |
 |   6   | [Multiples of 3 or 5](#multiples-of-3-or-5) |
 |   8   | [Multiply](#multiply)                       |
@@ -61,6 +62,36 @@ public class EvenOrOdd {
 public class EvenOrOdd {
   public static String even_or_odd(int number) {
     return number % 2 == 0 ? "Even" : "Odd";
+  }
+}
+```
+
+</details>
+
+---
+
+**[⬆ Back to Top](#challenges)**
+
+## Find the Odd Int
+
+Given an array of integers, find the one that appears an odd number of times. There will always be only one integer that appears an odd number of times.
+
+```java
+public class FindOdd {
+  public static int findIt(int[] a) {
+    // Your solution
+  }
+}
+```
+
+<details><summary>Solution</summary>
+
+```java
+import static java.util.Arrays.stream;
+
+public class FindOdd {
+  public static int findIt(int[] arr) {
+    return stream(arr).reduce(0, (a, b) -> a ^ b);
   }
 }
 ```
