@@ -6,6 +6,7 @@
 
 |  Kyu  | Questions                                   |
 | :---: | :------------------------------------------ |
+|   8   | [Beginner Series #2 Clock](#beginner-series-2-clock)               |
 |   8   | [Century From Year](#century-from-year)               |
 |   8   | [Even or Odd](#even-or-odd)                 |
 |   6   | [Find the Odd Int](#find-the-odd-int)                 |
@@ -16,6 +17,41 @@
 |   7   | [Vowel Count](#vowel-count)                 |
 
 ---
+
+## Beginner Series #2 Clock
+
+The clock shows h hours (0 <= h <= 23), m minutes (0 <= m <= 59) and s seconds (0 <= s <= 59) after midnight. Your task is to write a function which returns the time since midnight in milliseconds.
+
+Examples:
+
+```
+h = 0, m = 0, s = 0 -> res = 0
+h = 0, m = 1, s = 1 -> res = 61000
+h = 1, m = 0, s = 1 -> res = 3601000
+```
+
+```java
+public class Clock {
+  public static int Past(int h, int m, int s) {
+    // Your solution
+  }
+}
+```
+
+<details><summary>Solution</summary>
+
+```java
+public class Clock {
+  public static int Past(int h, int m, int s) {
+    return ((h * 60 * 60) + (m * 60) + s) * 1000;
+  }
+}
+```
+</details>
+
+---
+
+**[⬆ Back to Top](#challenges)**
 
 ## Century From Year
 
